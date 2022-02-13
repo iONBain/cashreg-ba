@@ -15,6 +15,10 @@ function showErrorMessage(msg) {
 }
 
 function calculateChange(amount) {
+    if (amount<0){
+        showErrorMessage("Cash Given should be greater than bill amount");
+        return;
+    }
     // const amount = cash-bill;
     for (let i = 0; i < availableNotes.length; i++) {
         const numberOfNotes = Math.trunc(amount / availableNotes[i])
