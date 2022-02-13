@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register</title>
+    <title>Cash Register | BA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +13,19 @@
     <div class="container">
         <h1 class="heading">Cash Register Manager</h1>
         <p class="description">
-            Enter the Bill amount and cash given by the customer and know minimum number of notes to return.
+           <span class="yellow">[</span>Enter the Bill amount and cash given by the customer and know minimum number of <span class="green">notes</span> to return<span class="yellow">]</span>
         </p>
-        <label for="bill-amount">Bill Amount:</label>
-        <input id="bill-amount" type="text" />
-        <button id="next-btn">Next</button>
-        <label for="cash-given">Cash Given:</label>
-        <input id="cash-given" type="text">
-        <button id="check-btn">Check</button>
-        <p id="error"></p>
+        <div class="box">
+
+       <div class="inputsss">
+
+           <label for="bill-amount">Bill Amount:</label>
+           <input id="bill-amount" type="text"  class="input"/>
+           <!-- <button id="next-btn">Next</button> -->
+           <label for="cash-given">Cash Given:</label>
+           <input id="cash-given" type="text" class="input">
+       </div>
+        <button id="check-btn" class="btn">Check</button>
         <table class="change-table">
             <caption>Return Change</caption>
             <tr>
@@ -45,7 +49,8 @@
                 <td>1</td>
             </tr>
         </table>
-
+        <p id="error"></p>
+    </div>
     </div>
 
 

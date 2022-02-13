@@ -1,6 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Overpass+Mono:wght@300;400&display=swap');
+*{
+    --lightgrey: #22252a;
+    --darkgrey: #17191d;
+    --white: #ececec;
+    --green: rgb(99, 223, 83);
+    --yellow: rgb(255, 236, 60);
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    cursor: default;
+    box-sizing: border-box;
+    font-family: 'Overpass Mono', monospace;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: var(--lightgrey);
+    color: var(--white)
+}
+
 .container{
     display: flex;
     flex-direction: column;
     width: 50vw;
-    /* background-color: ; */
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
+
+.heading{
+    background-color: var(--darkgrey);
+    color: var(--yellow);
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkgrey);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.input{
+    width: 150px;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    margin: 10px;
+    transition: all 0.5s ease;
+}
+.input:focus{
+    outline: none;
+    background-color: var(--yellow);
+    border-radius: 20px;
+}
+.btn{
+    width: 80px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    /* outline: none; */
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    background-color: var(--green);
+    border-radius: 20px;
+}
+
+
+td, th{
+    padding: 10px;
+}
+
+th, td {
+    border-radius: 5px;
+    background-color: var(--green);
+    color: var(--darkgrey);
+    font-weight: bolder;
+
+  }
+
+
+
+  /* utilities */
+  .yellow{
+      color: var(--yellow);
+  }
+  .green{
+      color: var(--green);
+  }
+  #error{
+      /* display: block; */
+      color: var(--yellow);
+      margin-top: 40px;
+      font-style: italic;
+      /* opacity: 0; */
+      transition: all 0.4s ease;
+  }
+  .show{
+      opacity: 1;
+  }
